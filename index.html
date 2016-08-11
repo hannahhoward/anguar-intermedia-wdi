@@ -41,9 +41,9 @@
 <p>The steps for completing your app are as follows:</p>
 
 <ol>
-<li>Setup an angular project either by hand (not recommended), or using a starter pack of your choice. Some recommendations include: <a href="https://github.com/ngbp/ngbp">NG-Boilerplate</a>, <a href="https://github.com/yeoman/generator-angular">Yeoman Angular</a>, <a href="https://github.com/Swiip/generator-gulp-angular">Yeoman Gulp Angular</a>
+<li>Setup an angular project either by hand or using a starter pack of your choice.
 </li>
-<li>If your seed doesn't include UI-Router, install it via bower: <a href="http://bower.io/">Bower</a>, <a href="https://github.com/angular-ui/ui-router">UI-Router Project</a>
+<li>If your seed doesn't include UI-Router, install it via npm
 </li>
 <li>Setup two routes with UI-Route, using $stateProvider, for the list page and the detail page of bleets. <a href="https://github.com/angular-ui/ui-router/wiki">UI-Router Wiki</a>
 </li>
@@ -52,10 +52,10 @@
 </li>
 <li>Setup a form and an event handler to submit new bleets. Use a POST to add the bleets to the api. <a href="https://docs.angularjs.org/api/ng/directive/form">Form Documentation</a>
 </li>
-<li>Build a directive to display individual bleets, along with the delete button and the "like" button. The directive should a link function to handle user clicking on the like button and the delete button, and an isolated scope so it can be called like this:
+<li>Build a component to display individual bleets, along with the delete button and the "like" button. The directive should a link function to handle user clicking on the like button and the delete button:
 
 Where 'currentBleet' is the bleet you want to display.
-<a href="https://docs.angularjs.org/guide/directive">Directive documentation</a>, <a href="http://tutorials.jenkov.com/angularjs/custom-directives.html">Directive Tutorial</a>
+<a href="https://docs.angularjs.org/guide/component">Component documentation</a>
 </li>
 <li>Use a PUT to make a bleet become "liked" when a user clicks on a like button.</li>
 <li>Use a DELETE to remove a bleet when a user clicks on the delete button</li>
